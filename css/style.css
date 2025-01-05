@@ -1,0 +1,520 @@
+/* UI Developer : Rohan Mahadik */
+/* Web Portal Name : Learning & Development */
+/* Started Date : 20/06/2023  */
+
+/* css for font start */
+@font-face {
+    font-family: 'Lato-Black';
+    src: url('../font/Lato-Black.eot');
+    src: url('../font/Lato-Black.eot?#iefix') format('embedded-opentype'),
+        url('../font/Lato-Black.woff2') format('woff2'),
+        url('../font/Lato-Black.woff') format('woff'),
+        url('../font/Lato-Black.ttf') format('truetype'),
+        url('../font/Lato-Black.svg#Lato-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato-Bold';
+    src: url('../font/Lato-Bold.eot');
+    src: url('../font/Lato-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../font/Lato-Bold.woff2') format('woff2'),
+        url('../font/Lato-Bold.woff') format('woff'),
+        url('../font/Lato-Bold.ttf') format('truetype'),
+        url('../font/Lato-Bold.svg#Lato-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato-Regular';
+    src: url('../font/Lato-Regular.eot');
+    src: url('../font/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../font/Lato-Regular.woff2') format('woff2'),
+        url('../font/Lato-Regular.woff') format('woff'),
+        url('../font/Lato-Regular.ttf') format('truetype'),
+        url('../font/Lato-Regular.svg#Lato-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato-Light';
+    src: url('../font/Lato-Light.eot');
+    src: url('../font/Lato-Light.eot?#iefix') format('embedded-opentype'),
+        url('../font/Lato-Light.woff2') format('woff2'),
+        url('../font/Lato-Light.woff') format('woff'),
+        url('../font/Lato-Light.ttf') format('truetype'),
+        url('../font/Lato-Light.svg#Lato-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* css for font end */
+
+
+/* common css start */
+body{
+    background-color: #f4f6fc;
+}
+.ld-margin{
+    margin: 2% 0;
+}
+.ld-tabcontaint-section{
+    padding: 2%;
+    background-color: #fff;
+    border-radius: 14px;
+  box-shadow: 0 0 6px 0 rgba(213, 224, 254, 0.48);
+  background-color: #fff;
+}
+.ld-au-para{
+    font-size: 16px;
+    color: #000;
+    font-family: "Lato-Bold";
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Lato-Bold";
+}
+/* common css end */
+/*  slider css start */
+.owl-theme .owl-dots .owl-dot.active span {
+    background: #db2727;
+    width: 80px;
+    height: 6px;
+}
+.owl-theme .owl-dots .owl-dot span {
+    width: 10px;
+    height: 6px;
+    margin: 5px 7px;
+    background: #fff;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity .2s ease;
+    border-radius: 30px;
+    
+}
+/* slider css end */
+/* header css start */
+.ld-header{
+    background-color: #fff;
+    padding: 0.5%;
+}
+.ld-header-logos{
+    display: flex;
+    align-items: center;
+}
+.ld-header-logo{
+    max-width: 120px;
+    width: 85%;
+    max-height: 100px;
+    height: 100%;
+}
+header.fixed{
+    width:100%;
+    position:fixed;
+    top:0;
+    
+}
+.ld-au-bg{
+    /* background-image: url('/img/600by400.webp'); */
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+
+/* header css end*/
+
+/* banner css start */
+.ld-banner-right{
+    background-image: linear-gradient(to right, #0a569e, #da2932);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 5%;
+    height: 100%;
+}
+.ld-banner-title{
+    font-family:"Lato-Bold";
+    color: #fff;
+    max-width: 700px;
+    width: 100%;
+    line-height:65px;
+    font-size: 45px;
+    padding-bottom: 8%;
+}
+.ld-banner-left{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 100%;
+}
+.ld-banner-left img{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.ld-bannerslider{
+    position: relative;
+}
+.owl-dots{
+    position: absolute;
+    top: 80%;
+    
+    width: 100%;
+    text-align: left !important;
+    padding-left: 3%;
+}
+.ld-banner-slidercontainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* banner css end */
+/* tab section css start */
+.ld-tabcontainer .nav-tabs {
+    border-bottom: 0;
+    justify-content: space-between;
+    background: #ddd;
+    border-radius: 5px;
+}
+.ld-tabcontainer .nav-tabs .nav-link{
+  font-size: 18px;
+  font-family: 'Lato-Regular';
+  color: rgba(46, 56, 77, 0.76);
+}
+.ld-tabcontainer .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #fff;
+    background-color: #1b4a98;
+    border-radius: 5px;
+    padding: 10px;
+    
+
+}
+
+.ld-au-containt{
+    background-color:#f4f6fc;
+    border-radius: 5px;
+    padding: 2%;
+    opacity: 0.8;
+}
+.ld-title-list span{
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #c3c5cb;
+  color: #1b4a98;
+}
+.ld-title-list{
+    display: flex;
+}
+.ld-title-list li:nth-child(2){
+    margin-left: 2%;
+    display: flex;
+    align-items: center;
+}
+.ld-title-list li h4{
+    font-family: 'Lato-Black';
+    color: #1b4a98;
+    margin-bottom: 0;
+}
+.ld-list-objt li{
+    font-family: 'Lato-Black';
+    
+    margin-bottom: 2%;
+    
+}
+.ld-list-objt li::before {
+    content: "•"; 
+    color: #1b4a98;
+    padding-right:2%;
+}
+.ld-tabcontaint-section-left{
+    padding: 4%;
+    
+}
+
+/* tab section css end */
+/* leftsection css start */
+.ld-title-leftsection{
+    margin-bottom: 2px;
+}
+
+.ld-tabcontaint-section-left h6 {
+    font-family: 'Lato-Black';
+}
+.ld-tabcontaint-section-left p{
+    font-family: 'Lato-Bold';
+    margin: 0;
+}
+.ld-datetraining{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 5px;
+    position: relative;
+    padding: 3%;
+    border-radius: 5px;
+}
+
+.ld-datetraining div{
+    width: 50%;
+    text-align: center;
+}
+.ld-title-leftsection{
+    position: relative;
+}
+
+.ld-title-leftsection::after{
+    content: '';
+    position: absolute;
+    width: 80%;
+    left: 0;
+    right: 0;
+    bottom: -15px;
+    margin: 0 auto;
+    height: 3px;
+    background-color: #ddd;
+
+
+}
+.green{
+    background-color: #A0C49D;
+}
+.pink{
+    background-color: #F3BCC8;
+}
+.blue{
+    background-color: #ECF2FF;
+}
+.gray{
+    background-color: #EEEEEE;
+}
+.ld-questions p , .ld-questions label{
+    font-family: 'Lato-Black';
+}
+.ld-questions .form-check{
+    margin-bottom: 10px;
+}
+
+.ld-morepolls a{
+    color: #000;
+    text-decoration: none;
+    font-family: 'Lato-Bold';
+}
+.ld-polls .form-check {
+    margin-bottom: 5px;
+    background-color: #ddd;
+    border-radius: 5px;
+    padding: 3%;
+
+}
+.ld-polls .form-check label{
+    margin-left: 4%;
+}
+.ld-polls .form-check input{
+    margin-left: -1%;
+}
+/* leftsection css end */
+/* css for video control start */
+.ld-videocontainer video{
+ width: 100%;
+ max-height:500px;
+ height: 100%;
+ border-radius: 10px;
+}
+/* css for video control end */
+/* mange form leadership css start */
+.ld-manageformleadership{
+    padding: 5%;
+}
+.ld-md-speak h4{
+    font-family: "Lato-Black";
+    font-size: 30px;
+}
+.ld-md-speak{
+    margin-top: 15%;
+}
+.ld-md-speak p{
+    font-family: "Lato-Regular";
+    font-size: 16px;
+  
+}
+.ld-img-section{
+    background-color: #000;
+    height: 350px;
+        width: 70%;
+    margin: 0 auto;
+    border-top-left-radius: 185px;
+    border-top-right-radius: 185px;
+}
+.ld-img-section img{
+    border-top-left-radius: 185px;
+    border-top-right-radius: 185px;
+    height: 100%;
+}
+.ld-nameleader{
+    width: 70%;
+    margin: 4% auto;
+}
+
+.ld-nameleader h3{
+    color: #1b4a98;
+    font-family: "Lato-Black";
+}
+.ld-nameleader h4{
+    font-family: "Lato-Black";
+}
+.ld-publicationlink{
+  
+    background-color: #fff;
+    border-radius: 14px;
+    box-shadow: 0 0 6px 0 rgba(213, 224, 254, 12);
+    display: block;
+    text-decoration: none;
+    font-family: "Lato-Regular";
+    color: #000;
+}
+.ld-publicationlink p{
+    padding: 4%;
+}
+.ld-publicationlink img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.ld-cllinks{
+    background-color: #f4f6fc;
+    border-radius: 10px;
+    padding: 2%;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.ld-cllinks .ld-logocourse{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 60px;
+   height: 60px;
+   background-color: #fff;
+   border-radius: 50px;
+   font-size: 30px;
+  color: #0a569e;
+}
+.ld-tile-likscl{
+    padding: 4%;
+    background-color: #fff;
+    border-radius: 5px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    bottom: -14px;
+    box-shadow: 0 0 6px 0 rgba(213, 224, 254, 12);
+   width: 80%;
+   left: 0;
+   right: 0;
+   margin: 0 auto;
+   color: #000;
+   font-family: 'Lato-Bold';
+}
+
+.ld-contactdetails{
+    background-color: #f4f6fc;
+    border-radius: 10px;
+    padding: 2%;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+   
+    position: relative;
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+.ld-profile span{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: #fff;
+    margin: 5% auto;
+}
+.ld-contactdetailsdata{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1%;
+    
+}
+.ld-icons{
+    width: 20%;
+}
+.ld-icons span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50px;
+    color: #1b4a98;
+}
+.ld-details{
+    width: 80%;
+}
+.ld-faq .accordion-flush .accordion-item .accordion-button{
+  
+}
+
+.ld-faq .accordion-button{
+    
+    font-family: "Lato-Bold";
+    
+}
+
+
+
+/* mange form leadership css end */
+
+
+@media screen and (max-width: 1367px) {
+    .ld-banner-title{
+        font-size: 36px;
+    }
+    .ld-tabcontainer .nav-tabs .nav-link{
+        font-size: 16px;
+    }
+    .ld-title-list li h4{
+        font-size: 20px;
+    }
+    .ld-tabcontaint-section-left p ,.ld-questions p, .ld-questions label{
+        font-size: 14px;
+    }
+    .ld-profile h4{
+        font-size: 20px;
+    }
+    .ld-profile h5{
+        font-size: 18px;
+    }
+    .ld-icons span{
+        width: 40px;
+        height: 40px;
+    }
+  }
